@@ -328,19 +328,19 @@
       <div class="container">
         <div class="number__content">
           <div class="number__item">
-            <p>8,705</p>
+            <span class="count">8,705</span>
             <span>PROJECTS COMPLETED </span>
           </div>
           <div class="number__item">
-            <p>480</p>
+            <span class="count">480</span>
             <span>ACTIVE CLIENTS </span>
           </div>
           <div class="number__item">
-            <p>625</p>
+            <span class="count">625</span>
             <span>CUPS OF COFFEE </span>
           </div>
           <div class="number__item">
-            <p>9,774</p>
+            <span class="count">9,774</span>
             <span>HAPPY CLIENTS </span>
           </div>
         </div>
@@ -467,23 +467,5 @@
     <!-- FANCYBOX -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- ZERO TO VALUE -->
-    <script>
-      $(".count").each(function () {
-        $(this)
-          .prop("Counter", 0)
-          .animate(
-            {
-              Counter: $(this).text(),
-            },
-            {
-              duration: 4000,
-              easing: "swing",
-              step: function (now) {
-                $(this).text(Math.ceil(now));
-              },
-            }
-          );
-      });
-    </script>
   </body>
 </html>
